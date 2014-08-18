@@ -124,8 +124,7 @@ background: #fafafa;
 /* separator */
 div.separator1 {
 padding-top: 0.5em;
-background: url(../images/ann_sep.gif) top left repeat-x;
-}
+border-bottom: 1px solid #eee;}
 .separator2 {
 background: #f6f3e9;
 border-bottom: 2px solid #eee9dd;
@@ -133,7 +132,7 @@ padding: 0.25em;
 }
 div.separator3 {
 padding-top: 0.5em;
-background: url(../images/ann_sep.gif) bottom left repeat-x;
+border-bottom: 1px solid #eee;
 }
 
 /* ----------------------
@@ -169,11 +168,11 @@ ul.list1, ul.list2, ul.list3 {
 list-style: none;
 }
 ul.list1 { }
-ul.list1 li { padding-left: 12px; background: url(../images/transitional/bullet07.gif) left no-repeat;}
+ul.list1 li { padding-left: 12px; background: url(../../../images/transitional/bullet07.gif) left no-repeat;}
 ul.list2 { padding-left: 0;}
 ul.list2 li { padding: 0.25em 0;}
 ul.list3 { }
-ul.list3 li { padding-left: 12px; background: url(../images/transitional/bullet08.gif) left no-repeat; }
+ul.list3 li { padding-left: 12px; background: url(../../../images/transitional/bullet08.gif) left no-repeat; }
 ul.list4 li { padding: 0.25em 0; }
 ul.list5 { padding-left: 2.5em; margin-left: 0; }
 ul.list6 { margin: 0; padding: 0; } /* list without margins */
@@ -1133,9 +1132,8 @@ tr.trhighlight2 td { background: #fafacc; }
 
 
 div.announcement {
-/*width: 500px;*/
 padding-top: 0.5em;
-background: url(../images/ann_sep.gif) top left repeat-x;
+border-top: 1px solid #eee;
 }
 div.announcement div.ann_body span {
 color: #000 !important;
@@ -1295,7 +1293,7 @@ margin-bottom: 0;
 }
 
 img.percentImage {
-background: white url(../images/percentImage_back.png) top left no-repeat;
+background: white url(../../../images/percentImage_back.png) top left no-repeat;
 padding: 0;
 margin: 5px 0 0 0;
 background-position: 1px 0;
@@ -1311,7 +1309,7 @@ table.showinfo3 tr td.se_impossible { background-color: #ffe9e2 !important; colo
 
 .externallink  { /* also works for 'new window' links*/
 padding-right: 1.5em;
-background: url(../images/external_icon.gif) right center no-repeat;
+background: url(../../../images/external_icon.gif) right center no-repeat;
 }
 
 .bgcolor5 { background-color: #fdfdfa; }
@@ -1447,17 +1445,6 @@ font-weight: bold;
 div.unitname p {
 color: #7a8899;
 margin-top: 5px;
-}
-
-ul.listresearch {
-margin-left: 0;
-padding-left: 2em;
-
-}
-ul.listresearch li {
-padding-left: 1.25em;
-background: url(../images/dotist_post.gif) left 5px no-repeat;
-list-style: none;
 }
 
 div#logoist img.usitelogo {
@@ -2271,7 +2258,7 @@ table.pgrid tr td span span { display: inline; padding: 0px 4px; }
 .approvedMonitoringYear { background: #699; border: 1px solid #699; color: #699;}
 .approvedAnotherYear { background: #cc6; border: 1px solid #cc6; color: #cc6;}
 .enroled { background: #fff; border: 1px solid #699; color: #fff;}
-.notApprovedMonitoringYear { background: url(../images/circle.gif) center center no-repeat; border: 1px solid #699; color: #fff;}
+.notApprovedMonitoringYear { background: url(../../../images/circle.gif) center center no-repeat; border: 1px solid #699; color: #fff;}
 .notApprovedAnotherYear { background: #fff; border: 1px solid #cc6; color: #fff;}
 
 .performanceGrid { padding: 7px 2px 1px 2px !important; font-size: 1px; }
@@ -2335,13 +2322,6 @@ text-align: center;
 #main td.pub-box_cell p { font-size: 1em;}
 .pub-box ul { list-style-type: none; margin: 0; padding: 0; font-size: 1em; }
 
-/* (id > class) contextual_nav */
-.pub-contextual_nav { float: right; width: 200px; margin: 0 0 20px 20px; padding: 20px 0 20px 20px; /* border-left: 1px solid #ccc; */}
-.pub-contextual_nav h2 { color:#666; }
-.pub-contextual_nav ul, .contextual_nav li  { list-style-type: none; margin: 0; padding-left: 0; }
-.pub-contextual_nav ul { margin-bottom: 20px; padding-left: 15px; border-left: 1px solid #ccc; }
-.pub-contextual_nav li { background: url(/img/icon_redcircle.gif) no-repeat 0 50%; padding-left: 15px; }
-
 .pub-h_box, .pub-h_box_alt { background:#f6f6f6; width: 69%; padding: 0.75em; margin: 1em 0 ; border: 1px solid #e2e2e2; }
 .pub-h_box_alt { background: #FCFCEC; }
 
@@ -2359,17 +2339,6 @@ text-align: center;
 .pub-redbox { color: #fff; background: #c30; padding: 3px 6px 3px 6px; }
 .pub-marker { background: #fff794; padding: 2px; }
 .pub-update { font-size: 0.9em; color: #999; background: #e8e8e8; padding: 2px 3px; }
-.pub-pdf_solo { background: url(/img/icon_pdf.gif) no-repeat 10px 50%; padding: 5px 0 5px 35px; }
-.pub-page { background: url(/img/icon_page.gif) no-repeat 7px 50%; padding: 2px 0 2px 27px; }
-.pub-feed { background: url(/img/icon_feed.gif) no-repeat 10px 50%; padding: 2px 0 2px 30px; }
-ul.pub-material { list-style-type: none; margin-left: 0; padding-left: 0; }
-ul.pub-material li.pub-pdf { background: url(/img/icon_pdf.gif) no-repeat 10px 50%; padding-left: 35px; }
-ul.pub-material li.pub-doc { background: url(/img/icon_doc.gif) no-repeat 13px 50%; padding-left: 35px; }
-ul.pub-material li.pub-xls { background: url(/img/icon_excel.gif) no-repeat 13px 50%; padding-left: 35px; }
-ul.pub-material li.pub-document { background: url(/img/icon_generic_doc.gif) no-repeat 13px 50%; padding-left: 35px; }
-ul.pub-material li.pub-link { background: url(/img/icon_link.gif) no-repeat 10px 50%; padding-left: 35px; }
-ul.pub-material li.pub-lightbulb { background: url(/img/icon_lightbulb.gif) no-repeat 10px 50%; padding-left: 35px; }
-ul.pub-material li.pub-cellphone { background: url(//www.ist.utl.pt/img/icon_cellphone.png) no-repeat 10px 50%; padding-left: 30px; }
 
 .pub-tab_lay { border: 1px solid #e2e2e2; margin-bottom: 1.5em;}
 .pub-tab_lay th { color: #333; background: #ccc; text-align: left; padding: 5px; }
@@ -2550,7 +2519,7 @@ margin: 0;
 padding: 0;
 }
 ul.operations li {
-background: url(../images/dotist_post.gif) 0 7px no-repeat;
+background: url(../../../images/dotist_post.gif) 0 7px no-repeat;
 padding-left: 1.2em;
 margin-bottom: 0.5em;
 margin-left: 1.5em;
@@ -2623,7 +2592,7 @@ margin: 0 auto;
 
 
 .compress {
-background: url(../images/icon-compress.png) left top no-repeat;
+background: url(../../../images/icon-compress.png) left top no-repeat;
 padding-left: 20px;
 }
 
@@ -2638,7 +2607,7 @@ display: block;
 
 /* autocomplete */
 input.autocomplete-loading {
-background-image: url(../images/autocomplete/spinner.gif);
+background-image: url(../../../images/autocomplete/spinner.gif);
 background-position: center right;
 background-repeat: no-repeat;
 }
@@ -2709,7 +2678,7 @@ font-weight: normal;
 }
 
 a.hlink {
-background: url(../images/icon_help_green.gif) top right no-repeat;
+background: url(../../../images/icon_help_green.gif) top right no-repeat;
 display: block;
 width: 18px;
 height: 18px;
