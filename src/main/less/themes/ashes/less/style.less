@@ -44,16 +44,9 @@
     text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
     margin: 0;
 }
-body {
-    padding: 0 15px;
-}
 
 input {
    outline: none;
-}
-
-body {
-  min-width: 1000px;
 }
 
 header {
@@ -64,7 +57,6 @@ header {
 
     & > * {
         padding-left: 0!important;
-        display: table-cell;
         vertical-align: middle;
     }
 
@@ -85,14 +77,22 @@ header {
                 background: @brand-primary;
                 color: @body-bg;
             }
+            @media (max-width: @screen-xs-max) {
+                // Emulate nav-stacked
+                float: none;
+                & > a {
+                  padding: 6px 20px;
+                }
+            }
         }
     }
+}
 
-    + div {
-            background-color: @gray-lighter;
-            padding-bottom: 25px;
-            overflow-y: hidden;
-    }
+#topNav {
+  padding-right: 0;
+  @media (min-width: @screen-sm-min) {
+    display: block;
+  }
 }
 
 header .nav li.active a, header .nav li.active a:hover {
@@ -103,20 +103,14 @@ nav#context, main {
     padding-top: 20px;
 }
 nav#context {
-    background: @body-bg;
-    border-right: 2px solid @body-bg;
-    margin-bottom: -999999%;
-    padding-bottom: 999999%;
-
     ul {
         list-style-type: none;
         ~ ul {
                 .navheader {
-                    margin-top: 25px;
+                    margin-top: 20px;
                 }
             }
     }
-    li {font-weight: 400;}
     .nav {
         li.navheader {
             border-bottom: 1px solid @gray-light;
@@ -159,8 +153,15 @@ nav#context {
                 color: @gray-darker;
                 border-radius: 0;
                 display: block;
+
+                @media (max-width: @screen-xs-max) {
+                  padding: 4px 0 4px 7.5px;
+                }
             }
         }
+    }
+    @media (min-width: @screen-sm-min) {
+      display: block;
     }
 }
 
@@ -173,7 +174,11 @@ nav#context .nav li &>a:hover, nav#context .nav li &>a:active {
     text-decoration: none;
 }
 main {
-  min-height: 700px !important;
+  @media (min-width: @screen-sm-min) {
+    min-height: 700px !important;
+  }
+  padding-bottom: 25px;
+  background-color: @gray-lighter;
   & > .breadcrumb {
       padding: 0 15px 8px 0;
       margin-bottom:10px;
@@ -203,20 +208,26 @@ main &>.breadcrumb a:hover, footer a:hover {
     color: @gray-light;
 }
 
+.hamburger {
+  margin-top: 0;
+  .icon-bar {
+    background-color: @gray-light;
+  }
+  border: 1px solid @navbar-default-toggle-border-color;
+}
+
 footer {
     font: normal 400 @font-size-small/1.2 "Helvetica Neue", sans-serif;
     color: @gray-light;
     clear: both;
     padding: 40px 20px 40px 0;
-    //background: transparent url('../img/logo_fenixedu_footer.svg') no-repeat 15px 25px;
-    //background-size: 150px;
     & > p {
         span:after {
           content: '|';
           padding-left: 15px;
         }
     }
-    img {width: 150px;}
+    img {width: 150px; max-width: 100%}
     a {
         color: @gray-light;
         clear: both;
@@ -224,6 +235,14 @@ footer {
         &:hover {
         color: @brand-primary;
         }
+    }
+    .brand { margin-left: 0;}
+    @media (max-width: @screen-xs-max) {
+      padding: 25px 20px 10px 0;
+      text-align: center;
+      img {
+        padding-bottom: 10px;
+      }
     }
 }
 
@@ -539,6 +558,12 @@ label,
 
 .logo-container{
   padding-right: 0;
+  @media (max-width: @screen-xs-max) {
+    text-align: left;
+    margin-left: 10px;
+    padding-bottom: 15px;
+  }
+  img { max-width: 95%; }
 }
  input[type=color], input[type=date], input[type=datetime-local], input[type=datetime], input[type=email], input[type=month], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], input[type=week], select, textarea {
   font-family: "Helvetica Neue",Arial,Helvetica,sans-serif;
