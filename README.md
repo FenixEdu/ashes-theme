@@ -25,9 +25,6 @@ Due to its multi-menu layout, this theme imposes a requirement:
 
 ## Known Issues
 
-- Due to the way the 2-col layout is defined, anchors do not work properly.
-- Responsiveness is disabled, as the theme is not ready for a responsive design.
-
 ## A note on 'general.css'
 
 The `general.css` file is included in the theme, and added to every page. This file is kept for legacy reasons (as it originated in the pre-Bennu Portal FenixEdu Academic) and should not have any impact on the Bootstrap or FenixEdu styles, only adding its own classes. If you find a situation where something is broken due to the presence of it, please file an issue.

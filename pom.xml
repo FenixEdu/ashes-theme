@@ -9,7 +9,7 @@
 
     <artifactId>ashes-theme</artifactId>
     <packaging>jar</packaging>
-    <version>1.0.0</version>
+    <version>1.1.0</version>
 
     <name>FenixEdu Ashes Theme</name>
     <url>http://fenixedu.org</url>
@@ -32,7 +32,7 @@
         <connection>scm:git:git@github.com:fenixedu/ashes-theme.git</connection>
         <developerConnection>scm:git:git@github.com:fenixedu/ashes-theme.git</developerConnection>
         <url>http://fenixedu.org</url>
-        <tag>v1.0.0</tag>
+        <tag>v1.1.0</tag>
     </scm>
 
     <build>

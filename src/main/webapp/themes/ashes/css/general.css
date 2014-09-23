@@ -3,14 +3,6 @@
 */
 
 /* ----------------------
------- Headings --------
------------------------ */
-
-h2 { margin: 0.5em 0 0.75em 0; }
-
-/* #bodycontent p { margin: 1.0em 0; } */
-
-/* ----------------------
 ------ Anchors ---------
 ----------------------- */
 
@@ -66,11 +58,6 @@ background-color: #fff;
 }
 
 .showpersonid {
-/*
-background-color: #e6f3e1;
-border-bottom: 1px solid #bddeb2;
-padding: 0.4em 0.6em;
-*/
 border-bottom: 1px dotted #aaa;
 padding-bottom: 2px;
 }
@@ -167,11 +154,9 @@ ul.lheight15 { line-height: 1.5em; } /* default */
 ul.list1, ul.list2, ul.list3 {
 list-style: none;
 }
-ul.list1 { }
 ul.list1 li { padding-left: 12px; background: url(../../../images/transitional/bullet07.gif) left no-repeat;}
 ul.list2 { padding-left: 0;}
 ul.list2 li { padding: 0.25em 0;}
-ul.list3 { }
 ul.list3 li { padding-left: 12px; background: url(../../../images/transitional/bullet08.gif) left no-repeat; }
 ul.list4 li { padding: 0.25em 0; }
 ul.list5 { padding-left: 2.5em; margin-left: 0; }
@@ -260,7 +245,6 @@ table.tdnopadding td {
 padding: 0;
 }
 
-
 /* nostyle */
 .tstylenone th, .tstylenone td {
 border: none;
@@ -286,7 +270,6 @@ td.liinline ul li { display: inline; }
 /* corners */
 table th.cornerleft { background: none; border-left: none; border-top: none; }
 table th.cornerleft2 { background: none; border-left: none; border-top: none; border-bottom: none; }
-table td.cornerright { }
 
 /* error , warning */
 .tderror1 { color: #c00; white-space: nowrap; }
@@ -304,14 +287,7 @@ tr.bgfafafa td { background-color: #fafafa; }
 /* Table classes definitions */
 
 /* table classes - general properties */
-.tstyle1 { }
-.tstyle2 { }
 .tstyle3 { border: 2px solid #ccc; }
-.tstyle4 { }
-.tstyle5 { }
-.tstyle7 { }
-.tstyle8 { }
-
 
 .tstyle9 { width: 100%; }
 .tstyle9 th { border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; background: #f6f6f6; }
@@ -325,7 +301,6 @@ padding: 5px; /* different top/bottom padding affect left/right padding renderin
 text-align: center;
 }
 
-
 .tstyle1 th { border: 1px solid #ccc; background: #f5f5f5;}
 .tstyle2 th { border: none; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; background: #f5f5f5; }
 .tstyle3 th { border: 1px solid #ccc; background: #eee; }
@@ -338,16 +313,8 @@ text-align: center;
 /* table classes - td properties */
 
 .tstyle1 td, .tstyle2 td, .tstyle3 td, .tstyle4 td  {
-padding: 5px; /*padding em "em" tem problemas de rendering no firefox, faz arredondamentos incoerentes */
+padding: 5px;
 }
-
-/*
-fa - fbfaf8
-f8 - faf9f5
-f5 - f8f6f1
-ee - f3f0e7
-cc - dad3ba
-*/
 
 .tstyle1 td { border: 1px solid #ccc; background-color: #fff; }
 .tstyle2 td { border: none; border-bottom: 1px solid #ccc; border-top: 1px solid #ccc; background-color: #fff; }
@@ -357,13 +324,11 @@ cc - dad3ba
 .tstyle7 td { border: 1px solid #eee; background: #eee; }
 .tstyle8 td { padding: 4px; background-color: #fff; }
 
-
 /* table classes - tr properties */
 
 table tr.bgwhite td {
 background: #fff;	
 }
-
 
 /* ------------ */
 /* Miscelaneous */
@@ -492,7 +457,7 @@ border-bottom: 2px solid #e6d099;
 padding: 4px 5px 5px 5px;
 }
 
-.warning0 { /*margin: 1em 0; padding: 0.1em 0.3em 0.15em 0.3em;*/ background-color: #fbf8cc; color: #805500; }
+.warning0 { background-color: #fbf8cc; color: #805500; }
 .warning0 table { color: #805500; }
 
 
@@ -506,14 +471,10 @@ form { margin: 0; padding: 0; }
 form p { margin: 0.5em; margin-left: 0; }
 span.required { color: #b55; }
 .forminline form { display: inline !important; }
-/*
-.forminline form table { display: inline; }
-*/
 
 fieldset {
 margin: 0.4em 0; padding: 0.4em 0;
 border: none;
-/*background-color: #f5f5f5;*/
 }
 
 .lfloat label, .lfloat2 label, lfloat3 label {
@@ -740,18 +701,6 @@ a.color007b4d { color: #007b4d !important; }
 ------- Specific -------
 ----------------------- */
 
-/* message.invalid.password (.properties) */
-div.pass_warning {
-font-weight: normal;
-color: #000;
-line-height: 1.4em;
-padding: 0.5em;
-margin-bottom: 1em;
-}
-div.pass_warning strong {
-background-color: #ffa;
-}
-
 div.pp {
 border: 1px solid #ccc;
 padding-bottom: 0;
@@ -886,8 +835,6 @@ text-align: left;
 padding-bottom: 0em;
 margin-bottom: 0.25em;
 }
-
-
 
 /* show evaluations */
 table.search {
@@ -1092,8 +1039,6 @@ table.vtsbc td.green { background-color: #ccddcc; }
 table.vtsbc td.red { background-color: #ffddcc; }
 table.vtsbc td.yellow { background-color: #ffffdd; }
 
-
-
 .backwhite {
 text-align: left;
 background-color: #fff;
@@ -1116,20 +1061,11 @@ border: none;
 tr.trhighlight1 td { background: #fff; }
 tr.trhighlight2 td { background: #fafacc; }
 
-
-
 /* Testes online */
-
-.qcontainer {}
-.qheader {}
-.qbody {}
-.qlinks {}
-.qanswer {}
 
 .qsanswered .qheader .qshowstate { background-color: #dfb ;}
 .qsnotanswered .qheader .qshowstate { background-color: #def; }
 .qsgivenup .qheader .qshowstate { background-color: #fff7bb; }
-
 
 div.announcement {
 padding-top: 0.5em;
@@ -1145,7 +1081,6 @@ padding: 0;
 div.announcement div.ann_body br {
 margin: -4px 0;
 padding: 0;
-/*display: none;*/
 }
 
 div.announcement h3 a { text-decoration: none; }
@@ -1188,18 +1123,8 @@ margin-top: 0.5em;
 margin-bottom: 0.5em;
 }
 
-
-
-tr td.tdhl1 { background-color: #fdfbdd; } /* amarelo */
-tr.tdhl1 td { background-color: #fdfbdd; } /* amarelo */
-
-
-div.photocontainer { /* when right floated */
-float: right;
-background: #fff;
-padding-left: 1em;
-margin: 1em 0 1em 1em;
-}
+tr td.tdhl1 { background-color: #fdfbdd; }
+tr.tdhl1 td { background-color: #fdfbdd; }
 
 img.showphoto {
 border: 1px solid #ddd;
@@ -1305,8 +1230,6 @@ table.showinfo3 tr td.se_enrolled { background-color: #e5f7e3 !important; color:
 table.showinfo3 tr td.se_temporary { background-color: #fbfbd9 !important; color: #91915f; }
 table.showinfo3 tr td.se_impossible { background-color: #ffe9e2 !important; color: #be5a39; }
 
-
-
 .externallink  { /* also works for 'new window' links*/
 padding-right: 1.5em;
 background: url(../../../images/external_icon.gif) right center no-repeat;
@@ -1319,8 +1242,6 @@ background: url(../../../images/external_icon.gif) right center no-repeat;
 
 
 tr.vigilancyHeaderColumns th { background: #fcfcfc; }
-
-
 
 table.tgluetop tr td, table.tgluetop tr th { 
 border-top: none; 
@@ -1459,31 +1380,11 @@ display: none;
 	Global Text Proprieties 
 *****************************************/
 
-
 .center { text-align: center; }
 .left { text-align: left; }
 
 table {
 color: #4b565c;
-}
-
-h1	{
-font-size: 1.7em;
-color: #fff;
-}
-
-h2	{
-font-size: 1.7em;
-color: #223d4a;
-}
-
-h3 {
-font-size: 1.25em;
-color: #223d4a;
-}
-h4 {
-font-size: 1.0em;
-color: #223d4a;
 }
 	
 /**********************************************
@@ -1493,15 +1394,6 @@ color: #223d4a;
 .error {
 background-color: #ffeadd;
 color: #c00;
-}
-
-.inputbutton {
-/*
-font: 11px Verdana, Arial, Helvetica, sans-serif;
-color: #333;
-background: #b5bdd6;
-width: 100px;
-*/
 }
 
 .inputbuttonSmall {
@@ -1818,8 +1710,6 @@ select.degrees {
 	TABLE Classes: Info TD + Info TD with Icons + ListClasses
 ******************************************************************/
 
-
-
 .infoIcons {
 	background-color: #EBECED;
 	vertical-align: middle;
@@ -1829,7 +1719,7 @@ select.degrees {
 	}
 
 .infoop2 {
-	background-color: #faf5de; /*faf5de,f2e5a6 or f5fade,e5f2a6 */
+	background-color: #faf5de;
 	vertical-align: middle;
 	padding: 0.5em 0.75em;
 	border-bottom: 1px solid #f2e5a6;
@@ -1895,8 +1785,6 @@ color: #000;
 font-weight: bold;
 }
 
-
-
 .infoop-blue {
 	background-color: #9CF;
 	vertical-align: middle;
@@ -1959,56 +1847,7 @@ table#ects {
 	page-break-after: always;
 	}
 
-	
-/*****************************************************************
-	Assiduidade - layout verbete
-******************************************************************/
 
-.verb-table {
-	border: 1px solid #333;
-	}
-
-.verb-hdr {
-	padding: 5px;
-	font-weight: bold;
-	text-align: center;
-	background: #ccc;
-	border-right: 1px solid #333;
-	border-bottom: 1px solid #333;
-	}
-
-.verb-hrd-last {
-	padding: 5px;
-	font-weight: bold;
-	text-align: center;
-	background: #ccc;
-	border-bottom: 1px solid #333;
-	}
-	
-.verb-td {
-	padding: 5px;
-	background: #ebeced;
-	border-right: 1px solid #333;   
-	border-bottom: 1px solid #ccc;                               
-	}
-	
-.verb-td-last {
-	padding: 5px;
-	background: #ebeced;  
-	border-bottom: 1px solid #ccc;                               
-	}
-
-.verb-finalrow {
-	padding: 5px;
-	background: #ebeced;
-	border-right: 1px solid #333;
-	}
-
-.verb-finalrow-last {
-	padding: 5px;
-	background: #ebeced;
-	}
-	
 /*****************************************************************
 	Auto Complete
 ******************************************************************/
@@ -2097,8 +1936,6 @@ ul.tcloudedit li a { border-bottom: 1px solid #aaa !important; }
 .tcloudeditlevel .tcloudlevel6-7 { font-size: 3.0em; }
 .tcloudeditlevel .tcloudlevel6-8 { font-size: 4.0em; }
 
-.tcloudeditnolevel span {}
-
 .flowblock {
 display: block;
 padding-top: 1em;
@@ -2116,7 +1953,6 @@ padding: 5px;
 .published { color: #569; }
 .approved { color: #595; }
 .rejected { color: #955; }
-
 
 
 /* Student curricular plan renderer */
@@ -2197,7 +2033,6 @@ table.scplan tr.scplangroup td.scplancolects { color: #000; }
 /* 00 Indent */
 td.scplancolident {
 background: none !important;
-/*border-width: 0px !important;*/
 padding: 0 !important;
 width: 1%;
 }
@@ -2209,18 +2044,6 @@ font-size: 1em !important;
 white-space: nowrap;
 }
 
-/* 02 Plano Curricular */
-td.scplancoldegreecurricularplan { }
-
-/* 03 Opcional */
-td.scplancolenrollmenttype { }
-
-/* 04 Caixa */
-td.scplancolextracurricularcheck { }
-
-/* 05 Reprovado / Nao Avaliado */
-td.scplancolenrollmentstate { }
-
 /* 06 Nota */
 td.scplancolgrade { color: #444; }
 
@@ -2231,27 +2054,17 @@ td.scplancolweight { color: #888; }
 td.scplancolects { color: #888; }
 
 /* 09 ï¿½poca */
-td.scplancolenrolmentevaluationtype { }
 td.scplancolenrolmentevaluationtype span { border-bottom: 1px dotted #777; }
-
-/* 10 Ano */
-td.scplancolyear { }
 
 /* 11 Semestre */
 td.scplancolsemester { white-space: nowrap; }
 
 /* 12 Data do Exame */
-td.scplancolexamdate { }
 td.scplancolexamdate span { border-bottom: 1px dotted #777; }
 
 /* 13 Pessoa Responsï¿½vel Nota */
-td.scplancolgraderesponsible { }
 td.scplancolgraderesponsible span { border-bottom: 1px dotted #777; }
-
-
-
 /* tutors performance grids */
-table.pgrid tr td { }
 table.pgrid tr td span span { display: inline; padding: 0px 4px; }
 
 .emptySpace { background: #fff; border: 1px solid #000; color: #fff;}
@@ -2283,18 +2096,6 @@ border: none;
 }
 .dinlineinside * {
 display: inline;
-}
-
-/* -------------------------
----- Deploy Warning ----
--------------------------- */
-
-.deploywarning {
-background: #cd4108;
-border-bottom: 3px solid #eb5f26;
-color: #fbb699;
-padding: 0.75em;
-text-align: center;	
 }
 
 /***********************************************************
@@ -2357,7 +2158,6 @@ table.tdwith90px td { width: 90px; }
 a.help {
 position: relative;
 text-decoration: none;
-/*color: black !important;*/
 border: none !important;
 width: 20px;
 outline: none;
@@ -2366,7 +2166,6 @@ a.help span {
 display: none;
 }
 a.help:hover {
-/*background: none;*/ /* IE hack */
 z-index: 100;
 }
 a.help:hover span {
@@ -2381,15 +2180,10 @@ padding: 7px 10px;
 background: #48869e;
 color: #fff;
 border: 3px solid #97bac6;
-/*cursor: help;*/
 }
 
 table.thpadding5px10px th { padding: 5px 10px;  }
 table.thpadding0px th { padding: 0px;  }
-/*
-table.tborderccc { border: 1px solid #ccc; }
-.brightccc { border-right: 1px solid #ccc !important; }
-*/
 
 div.relative {
 position: relative;
@@ -2408,8 +2202,6 @@ display: block;
 background: #faf5ca;
 color: #000;
 }
-
-
 
 div.announcement_gallery {
 width: 80px;
@@ -2460,7 +2252,6 @@ padding: 0;
 padding: 2px 6px;
 border: 1px solid #ccc;
 }
-td.padded { }
 .tdbar {
 background: #a3d1d9 !important;
 text-align: center;
@@ -2567,13 +2358,10 @@ padding: 1px 2px;
 display: block;
 }
 
-
 /* drag and drop list */
 ul#tree li {
 cursor: move;
 }
-
-
 
 span.requiredMessage {
 display: block;
@@ -2582,14 +2370,10 @@ font-size: 0.9em;
 margin-bottom: 1em;
 }
 
-
-
 img.mbottom-fix, .mbottom-fix img { /* fixes unwanted bottom margin in images */
 display: block;
 margin: 0 auto;
 }
-
-
 
 .compress {
 background: url(../../../images/icon-compress.png) left top no-repeat;
