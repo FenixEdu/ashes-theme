@@ -588,7 +588,11 @@ label,
 
 @media print {
     nav, header, footer, ol.breadcrumb, .fenixEduBar {
-      display: none;
+      display: none !important;
+    }
+    main {
+      left: 0px !important;
+      width: 100% !important;
     }
     a[href]:after {
       content: none !important;
