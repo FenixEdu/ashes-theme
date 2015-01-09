@@ -9,7 +9,7 @@
 
     <artifactId>ashes-theme</artifactId>
     <packaging>jar</packaging>
-    <version>1.1.1</version>
+    <version>1.2.0-SNAPSHOT</version>
 
     <name>FenixEdu Ashes Theme</name>
     <url>http://fenixedu.org</url>
@@ -32,15 +32,15 @@
         <connection>scm:git:git@github.com:fenixedu/ashes-theme.git</connection>
         <developerConnection>scm:git:git@github.com:fenixedu/ashes-theme.git</developerConnection>
         <url>http://fenixedu.org</url>
-        <tag>v1.1.1</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <build>
         <plugins>
             <plugin>
-                <groupId>de.sandroboehme.lesscss</groupId>
+                <groupId>org.lesscss</groupId>
                 <artifactId>lesscss-maven-plugin</artifactId>
-                <version>1.6.1.1.0</version>
+                <version>1.7.0.1.1</version>
                 <configuration>
                     <sourceDirectory>${project.basedir}/src/main/less/themes/ashes/less</sourceDirectory>
                     <outputDirectory>${project.build.directory}/classes/META-INF/resources/themes/ashes/css</outputDirectory>

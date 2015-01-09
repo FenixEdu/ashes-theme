@@ -2,7 +2,7 @@
 
 Ashes is a theme for Bennu Portal, initially developed for the FenixEdu Academic application family.
 
-Note: This theme requires Bennu Portal 3.3.0 or higher.
+Note: This theme requires Bennu Portal 3.4.0 or higher.
 
 ## About the Theme
 
