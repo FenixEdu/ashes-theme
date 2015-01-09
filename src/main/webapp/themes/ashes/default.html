@@ -98,7 +98,7 @@
 		</div>
 		<nav class="col-sm-10 collapse" id="topNav" role="navigation">
 			<ul class="nav navbar-bottom nav-pills nav-menu">
-			{% lazyFor item in config.menu.userMenuStream %}
+			{% lazyFor item in topLevelMenu %}
 				<li class="{% if item == selectedTopLevel %}active{% endif %}"><a href="{{contextPath}}{{item.fullPath}}">{{item.title.content}}</a></li>
 			{% endLazyFor %}
 				<li class="visible-xs"><a href="{{contextPath}}/logout"><strong>Logout</strong></a></li>
