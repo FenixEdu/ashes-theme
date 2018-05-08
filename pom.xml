@@ -4,7 +4,7 @@
     <parent>
         <groupId>org.fenixedu</groupId>
         <artifactId>web-library-project</artifactId>
-        <version>2.1.0</version>
+        <version>2.4.0</version>
     </parent>
 
     <artifactId>ashes-theme</artifactId>
@@ -16,8 +16,8 @@
     <inceptionYear>2014</inceptionYear>
 
     <issueManagement>
-        <system>GitHub</system>
-        <url>https://github.com/FenixEdu/ashes-theme/issues/</url>
+        <system>JIRA</system>
+        <url>https://jira.fenixedu.org/browse/ASHES</url>
     </issueManagement>
 
     <licenses>
@@ -62,8 +62,8 @@
 
     <repositories>
         <repository>
-            <id>fenix-ashes-maven-repository</id>
-            <url>https://fenix-ashes.ist.utl.pt/nexus/content/groups/fenix-ashes-maven-repository</url>
+            <id>fenixedu-maven-repository</id>
+            <url>https://repo.fenixedu.org/fenixedu-maven-repository</url>
         </repository>
     </repositories>
 
