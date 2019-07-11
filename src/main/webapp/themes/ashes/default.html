@@ -133,7 +133,7 @@
 			<ul class="nav nav-pills nav-stacked">
 				<li class="navheader"><strong>{{item.title.content}}</strong></li>
 				{% lazyFor child in item.userMenuStream %}
-					<li><a href="{{contextPath}}{{child.fullPath}}">{{child.title.content}}</a></li>
+					<li><a href="{{contextPath}}{{child.fullPath}}" target="{{child.target}}">{{child.title.content}}</a></li>
 				{% endLazyFor %}
 			</ul>
 		{% endLazyFor %}
